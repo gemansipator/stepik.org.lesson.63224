@@ -1,4 +1,3 @@
 fun main() {
-    var s:String = "5"
-    println("Age: ${s}")
+    readLine() //Противоположность println (вместо вывода мы что-то получаем выражение типа "String?" стрингвопрос)
 }
