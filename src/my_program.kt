@@ -1,4 +1,4 @@
-fun calcTax(sum:Int = 1000): Double{
+fun calcTax(sum:Int): Double{
     val tax_ratio = 0.13
 
     return tax_ratio*sum
