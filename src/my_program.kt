@@ -1,3 +1,4 @@
 fun main() {
-    println("Hello World!")
+    var s:String = "5"
+    println("Age: ${s}")
 }
