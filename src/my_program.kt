@@ -1,3 +1,9 @@
 fun main() {
-    readLine() //Противоположность println (вместо вывода мы что-то получаем выражение типа "String?" стрингвопрос)
+    val first_name: String? = readLine()
+    val last_name: String? = readLine()
+
+    println("Hello ${first_name} ${last_name}!")
+
+
+
 }
