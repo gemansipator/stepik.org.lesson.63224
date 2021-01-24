@@ -1,9 +1,7 @@
 fun main() {
-    val first_name: String? = readLine()
-    val last_name: String? = readLine()
+    fun sum(a:Int=3, b:Int=7):Int{
+        return a+b
+    }
 
-    println("Hello ${first_name} ${last_name}!")
-
-
-
+    print(sum())
 }
