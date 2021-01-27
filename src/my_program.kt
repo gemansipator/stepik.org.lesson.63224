@@ -1,18 +1,12 @@
+//Находим количество нулей (можно сделать ЛЮБОЙ СИМВОЛ) введенных в командной строке
+
 fun main() {
     val str:String? = readLine()
-    var digit: Int
-    when (str){
-        "one" -> digit = 1
-        "two" -> digit = 2
-        "three" -> digit = 3
-        "four" -> digit = 5
-        "zero" -> digit = 0
-        else -> {
-            print("Wrong string")
-            return
-        }
+    var zeros_cont: Int = 0;
+    if (str == null) return
+    for (c in str){
+        if (c == '0') zeros_cont++
     }
-    println(digit)
-
+    print("${zeros_cont} zeros")
 
 }
