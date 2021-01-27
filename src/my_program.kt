@@ -1,17 +1,18 @@
-fun calcTax(sum:Int): Double{
-    val tax_ratio = 0.13
-
-    return tax_ratio*sum
-}
-
 fun main() {
-    val sum_user: String? = readLine()
+    val str:String? = readLine()
+    var digit: Int
+    when (str){
+        "one" -> digit = 1
+        "two" -> digit = 2
+        "three" -> digit = 3
+        "four" -> digit = 5
+        "zero" -> digit = 0
+        else -> {
+            print("Wrong string")
+            return
+        }
+    }
+    println(digit)
 
-    if (sum_user == null) return   //Если значение пустое, то возвратит return и покинет функцию ТОЧКА ВХОДА
-    // и приложение завершится
-    var sum:Int = sum_user.toInt() //Конвертация из строки в число
-    val tax:Double = calcTax(sum)  // Выполнит функцию calcTax, аргументом в которой станет переменная sum
-
-    println("For ${sum} ${tax}")
 
 }
